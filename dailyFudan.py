@@ -1,4 +1,4 @@
-import time
+import time, random
 from json import loads as json_loads
 from json import dumps as json_dumps
 from os import path as os_path
@@ -262,7 +262,7 @@ if __name__ == '__main__':
             pass
         logging.error("请按readme操作，以正确完成配置～\n")
         sys_exit(1)
-
+    time.sleep(random.randint(60,600))
     # logging.debug("ACCOUNT：" + uid + psw)
     zlapp_login = 'https://uis.fudan.edu.cn/authserver/login?' \
                   'service=https://zlapp.fudan.edu.cn/site/ncov/fudanDaily'
