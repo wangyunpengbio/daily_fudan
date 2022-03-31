@@ -278,7 +278,7 @@ if __name__ == '__main__':
     def captcha_info(message):
         iy_info(message, gl_info)
     captcha = DailyFDCaptcha(uname,pwd,daily_fudan,captcha_info)
-    daily_fudan.checkin(captcha)
+    #daily_fudan.checkin(captcha)
 
     # 再检查一遍
     if daily_fudan.check():
