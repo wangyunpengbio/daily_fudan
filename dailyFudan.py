@@ -282,9 +282,11 @@ if __name__ == '__main__':
 
     # 再检查一遍
     if daily_fudan.check():
-        iy_info("平安复旦：今日已提交", gl_info)
+        logging.info("OK")
+#         iy_info("平安复旦：今日已提交", gl_info)
     else:
-        iy_info("平安复旦：本次提交失败", gl_info)
+        iy_info("请打卡", gl_info)
+#         iy_info("平安复旦：本次提交失败", gl_info)
 
     daily_fudan.close()
     sys_exit()
