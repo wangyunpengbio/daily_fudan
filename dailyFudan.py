@@ -272,7 +272,8 @@ if __name__ == '__main__':
         sys_exit()
 
     if daily_fudan.check():
-        iy_info("平安复旦：今日已提交", gl_info)
+        logging.info("OK")
+#         iy_info("平安复旦：今日已提交", gl_info)
         sys_exit()
 
     def captcha_info(message):
